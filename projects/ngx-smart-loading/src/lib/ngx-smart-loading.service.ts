@@ -101,7 +101,8 @@ export class NgxSmartLoadingService implements OnDestroy {
   }
 
   /**
-   * makes it possible to use the default loader for multiple downloads thanks to the stack */
+   * Makes it possible to use the default
+   * loader for multiple downloads thanks to the stack */
   private observeDefaultLoaderWithStack() {
     this.addLoaderForMultiplexing(this.addStackToLoader(this._defaultLoader));
   }
