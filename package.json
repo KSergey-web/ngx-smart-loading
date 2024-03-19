@@ -32,17 +32,22 @@
     "@angular-eslint/template-parser": "17.3.0",
     "@angular/cli": "^17.1.2",
     "@angular/compiler-cli": "^17.1.0",
+    "@commitlint/cli": "^19.2.1",
+    "@commitlint/config-conventional": "^19.1.0",
     "@types/jasmine": "~5.1.0",
     "@typescript-eslint/eslint-plugin": "7.2.0",
     "@typescript-eslint/parser": "7.2.0",
     "eslint": "^8.57.0",
+    "husky": "^9.0.11",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "lint-staged": "^15.2.2",
     "ng-packagr": "^17.1.0",
+    "prettier": "^3.2.5",
     "typescript": "~5.3.2"
   }
 }
