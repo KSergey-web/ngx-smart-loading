@@ -33,6 +33,15 @@
               "zone.js/testing"
             ]
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-smart-loading/src/**/*.ts",
+              "projects/ngx-smart-loading/src/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -126,6 +135,15 @@
               "projects/demo/src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/demo/src/**/*.ts",
+              "projects/demo/src/**/*.html"
+            ]
           }
         }
       }
