@@ -1,0 +1,4 @@
+{
+  "*": "prettier --check --ignore-unknown",
+  "**/*.{ts,css,html}": "npx eslint"
+}
