@@ -1,11 +1,20 @@
 import { Injectable, OnDestroy } from '@angular/core';
-import { BehaviorSubject, combineLatest, finalize, map, Observable, of, Subscription, switchMap } from "rxjs";
+import {
+  BehaviorSubject,
+  combineLatest,
+  finalize,
+  map,
+  Observable,
+  of,
+  Subscription,
+  switchMap,
+} from 'rxjs';
 
 /**
  * Main service for manage loading
  * @constructor */
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class NgxSmartLoadingService implements OnDestroy {
   /**
@@ -29,20 +38,20 @@ export class NgxSmartLoadingService implements OnDestroy {
    * This subject contains summary information about whether
    * all loaders have finished loading in the {@link NgxSmartLoadingService._loaders} variable
    */
-  private _isFetching$ = new BehaviorSubject(false);
+  private _isLoading$ = new BehaviorSubject(false);
 
   /**
    * This observable contains summary information about loading {@link NgxSmartLoadingService._isFetching$}
    */
-  get isFetching$(): Observable<boolean> {
-    return this._isFetching$.asObservable();
+  get isLoading$(): Observable<boolean> {
+    return this._isLoading$.asObservable();
   }
 
   /**
    * This value contains summary information about loading {@link NgxSmartLoadingService._isFetching$}
    */
-  get isFetching(): boolean {
-    return this._isFetching$.value;
+  get isLoading(): boolean {
+    return this._isLoading$.value;
   }
 
   ngOnDestroy(): void {
@@ -109,13 +118,12 @@ export class NgxSmartLoadingService implements OnDestroy {
 
   private multiplexLoaders(): void {
     this._subscription.unsubscribe();
-    this._subscription = combineLatest(this._loaders)
-      .subscribe((result) => {
-        if (result.every((item) => !item)) {
-          this._isFetching$.next(false);
-        } else {
-          this._isFetching$.next(true);
-        }
-      });
+    this._subscription = combineLatest(this._loaders).subscribe((result) => {
+      if (result.every((item) => !item)) {
+        this._isLoading$.next(false);
+      } else {
+        this._isLoading$.next(true);
+      }
+    });
   }
 }
