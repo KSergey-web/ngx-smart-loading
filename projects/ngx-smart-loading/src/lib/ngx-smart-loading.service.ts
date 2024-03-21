@@ -41,14 +41,14 @@ export class NgxSmartLoadingService implements OnDestroy {
   private _isLoading$ = new BehaviorSubject(false);
 
   /**
-   * This observable contains summary information about loading {@link NgxSmartLoadingService._isFetching$}
+   * This observable contains summary information about loading {@link NgxSmartLoadingService._isLoading$}
    */
   get isLoading$(): Observable<boolean> {
     return this._isLoading$.asObservable();
   }
 
   /**
-   * This value contains summary information about loading {@link NgxSmartLoadingService._isFetching$}
+   * This value contains summary information about loading {@link NgxSmartLoadingService._isLoading$}
    */
   get isLoading(): boolean {
     return this._isLoading$.value;
