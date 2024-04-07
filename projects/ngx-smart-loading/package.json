@@ -1,6 +1,10 @@
 {
   "name": "ngx-smart-loading",
   "version": "0.0.1",
+  "scripts": {
+    "lib:build": "ng build",
+    "lib:pack": "npm run lib:build && ls &&  cd ../../dist/ngx-smart-loading && npm pack"
+  },
   "peerDependencies": {
     "@angular/common": ">=13.3.1",
     "@angular/core": ">=13.3.1",
