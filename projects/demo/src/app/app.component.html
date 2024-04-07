@@ -1,0 +1,19 @@
+@if (isLoading()) {
+  <div class="spinner-container">
+    <img
+      ngSrc="/assets/icons/spinner.svg"
+      alt="spinner-icon"
+      class="spinner-icon"
+      height="100"
+      width="100"
+    />
+  </div>
+} @else {
+  <p>Загрузка завершена</p>
+}
+
+@if (!isLoading()) {
+  <button (click)="startLoading()">Начать загрузку</button>
+} @else {
+  <button (click)="stopLoading()">Остановить загрузку</button>
+}
