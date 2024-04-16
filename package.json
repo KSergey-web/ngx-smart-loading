@@ -1,6 +1,8 @@
 {
   "name": "loader-workspace",
   "version": "0.0.0",
+  "description": "A service for tracking the status of asynchronous tasks (for example, the status of requests to the server)",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -11,6 +13,14 @@
     "lint": "ng lint",
     "prepare": "husky"
   },
+  "maintainers": [
+    "Kulaev Sergey"
+  ],
+  "keywords": [
+    "Angular easy track loading state",
+    "Service with RxJS for track loading",
+    "Tracking the download status for multiple requests"
+  ],
   "private": true,
   "dependencies": {
     "@angular/animations": "^17.1.0",

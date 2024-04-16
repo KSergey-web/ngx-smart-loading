@@ -1,10 +1,20 @@
 {
   "name": "ngx-smart-loading",
   "version": "0.0.1",
+  "license": "MIT",
+  "description": "A service for tracking the status of asynchronous tasks (for example, the status of requests to the server)",
   "scripts": {
     "lib:build": "ng build",
     "lib:pack": "npm run lib:build && ls &&  cd ../../dist/ngx-smart-loading && npm pack"
   },
+  "maintainers": [
+    "Kulaev Sergey"
+  ],
+  "keywords": [
+    "Angular easy track loading state",
+    "Service with RxJS for track loading",
+    "Tracking the download status for multiple requests"
+  ],
   "peerDependencies": {
     "@angular/common": ">=13.3.1",
     "@angular/core": ">=13.3.1",
