@@ -5,7 +5,8 @@
   "description": "A service for tracking the status of asynchronous tasks (for example, the status of requests to the server)",
   "scripts": {
     "lib:build": "ng build",
-    "lib:pack": "npm run lib:build && ls &&  cd ../../dist/ngx-smart-loading && npm pack"
+    "lib:pack": "npm run lib:build && ls &&  cd ../../dist/ngx-smart-loading && npm pack",
+    "lib:publish": "npm run lib:build --configuration=production && cd ../../dist/ngx-smart-loading && npm pack && npm publish"
   },
   "maintainers": [
     "Kulaev Sergey"
