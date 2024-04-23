@@ -1,6 +1,6 @@
 {
   "name": "ngx-smart-loading",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "A service for tracking the status of asynchronous tasks (for example, the status of requests to the server)",
   "scripts": {
