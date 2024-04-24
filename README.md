@@ -28,8 +28,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 # State loading tracking
 
-> A neat way to unsubscribe from observables when the component destroyed
-
 Source https://github.com/KSergey-web/ngx-smart-loading
 
 ## Compatibility with Angular Versions

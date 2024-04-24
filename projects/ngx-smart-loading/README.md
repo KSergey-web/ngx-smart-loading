@@ -1,7 +1,5 @@
 # State loading tracking
 
-> A neat way to unsubscribe from observables when the component destroyed
-
 Source https://github.com/KSergey-web/ngx-smart-loading
 
 ## Compatibility with Angular Versions
